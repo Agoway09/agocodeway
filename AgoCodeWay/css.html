@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprender CSS - AgoCodeWay</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .aula {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .codigo {
+            background: #1e1e1e;
+            color: #00ff88;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: monospace;
+        }
+
+        .exemplo {
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: #3498db;
+            margin-top: 10px;
+        }
+
+        .exercicio {
+            background: #ecf0f1;
+            padding: 20px;
+            border-left: 5px solid #1abc9c;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">AgoCodeWay</h1>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">JavaScript</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="aula">
+
+    <h2>🎨 O que é CSS?</h2>
+    <p>
+        CSS (Cascading Style Sheets) é usado para estilizar o HTML.
+        Com ele você muda cores, tamanhos, posições e deixa o site bonito.
+    </p>
+
+    <h2>🎯 Exemplo básico</h2>
+
+    <div class="codigo">
+p {
+    color: blue;
+    font-size: 20px;
+}
+    </div>
+
+    <div class="exemplo">
+        <p style="color: blue; font-size: 20px;">
+            Este texto está estilizado com CSS!
+        </p>
+    </div>
+
+    <h2>📦 Trabalhando com caixas (div)</h2>
+
+    <div class="codigo">
+.box {
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+    </div>
+
+    <div class="box"></div>
+
+    <div class="exercicio">
+        <h3>🎯 Exercício</h3>
+        <p>Crie uma caixa com:</p>
+        <ul>
+            <li>Cor vermelha</li>
+            <li>Largura: 150px</li>
+            <li>Altura: 150px</li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 AgoCodeWay</p>
+</footer>
+
+</body>
+</html>

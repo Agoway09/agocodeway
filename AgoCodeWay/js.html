@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprender JavaScript - AgoCodeWay</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .aula {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .codigo {
+            background: #1e1e1e;
+            color: #00ff88;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: monospace;
+        }
+
+        .exercicio {
+            background: #ecf0f1;
+            padding: 20px;
+            border-left: 5px solid #f39c12;
+            margin-top: 30px;
+        }
+
+        .demo {
+            margin-top: 20px;
+        }
+
+        .demo button {
+            padding: 10px 20px;
+            background: #3498db;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .demo button:hover {
+            background: #2980b9;
+        }
+
+        .resultado {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">AgoCodeWay</h1>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">JavaScript</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="aula">
+
+    <h2>⚡ O que é JavaScript?</h2>
+    <p>
+        JavaScript é a linguagem que adiciona interatividade ao site.
+        Com ele você pode reagir a cliques, mudar textos e muito mais.
+    </p>
+
+    <h2>🎯 Exemplo básico</h2>
+
+    <div class="codigo">
+alert("Olá, mundo!");
+    </div>
+
+    <p>Esse código mostra uma mensagem na tela.</p>
+
+    <h2>🖱️ Interação com botão</h2>
+
+    <div class="codigo">
+function mostrarMensagem() {
+    document.getElementById("texto").innerText = "Você clicou no botão!";
+}
+    </div>
+
+    <div class="demo">
+        <button onclick="mostrarMensagem()">Clique aqui</button>
+        <p id="texto" class="resultado"></p>
+    </div>
+
+    <h2>🎨 Mudando cores com JavaScript</h2>
+
+    <div class="codigo">
+function mudarCor() {
+    document.body.style.backgroundColor = "lightblue";
+}
+    </div>
+
+    <div class="demo">
+        <button onclick="mudarCor()">Mudar cor</button>
+    </div>
+
+    <div class="exercicio">
+        <h3>🎯 Exercício</h3>
+        <p>Crie um botão que:</p>
+        <ul>
+            <li>Ao clicar, muda o texto para: "Aprendendo JavaScript!"</li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 AgoCodeWay</p>
+</footer>
+
+<script>
+function mostrarMensagem() {
+    document.getElementById("texto").innerText = "Você clicou no botão!";
+}
+
+function mudarCor() {
+    document.body.style.backgroundColor = "lightblue";
+}
+</script>
+
+</body>
+</html>

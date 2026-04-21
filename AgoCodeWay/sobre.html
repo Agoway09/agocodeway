@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - AgoCodeWay</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .sobre {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .perfil {
+            margin-bottom: 40px;
+        }
+
+        .perfil img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: white;
+            padding: 20px;
+            width: 150px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        .projetos {
+            margin-top: 40px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">AgoCodeWay</h1>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">JavaScript</a></li>
+            <li><a href="pratica.html">Prática</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="sobre">
+
+    <!-- PERFIL -->
+    <div class="perfil">
+        <img src="img/1776811531097.jpg" alt="Minha foto">
+        <h2>Agoway</h2>
+        <p>Desenvolvedor Web em crescimento 🚀</p>
+        <p>
+            Criador do DevStart, um site feito para ajudar iniciantes a aprender
+            HTML, CSS e JavaScript de forma simples e prática.
+        </p>
+    </div>
+
+    <!-- SKILLS -->
+    <h2>💻 Minhas Skills</h2><br>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+    </div>
+
+    <!-- PROJETOS -->
+    <div class="projetos">
+        <h2>📂 Projetos</h2>
+<br>
+        <div class="cards">
+            <div class="card">
+                <h3>AgoCodeWay</h3>
+                <p>Plataforma educativa para iniciantes em programação web.</p>
+            </div>
+
+            <div class="card">
+                <h3>AutoChoice</h3>
+                <p>Sistema de encomenda de carros online, desenvolvido com os meus companheiros.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 AgoCodeWay - Criado por Agoway</p>
+</footer>
+
+</body>
+</html>

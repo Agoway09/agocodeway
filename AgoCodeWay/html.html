@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprender HTML - AgoCodeWay</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .aula {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .aula h2 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .aula p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        /* CAIXA DE CÓDIGO */
+        .codigo {
+            background: #1e1e1e;
+            color: #00ff88;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            overflow-x: auto;
+            font-family: monospace;
+        }
+
+        /* EXERCÍCIO */
+        .exercicio {
+            background: #ecf0f1;
+            padding: 20px;
+            border-left: 5px solid #3498db;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">AgoCodeWay</h1>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">JavaScript</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="aula">
+
+    <h2>📘 O que é HTML?</h2>
+    <p>
+        HTML (HyperText Markup Language) é a linguagem usada para criar a estrutura de um site.
+        É como o esqueleto de uma página web.
+    </p>
+
+    <h2>🧱 Estrutura básica</h2>
+    <p>Todo site começa com uma estrutura base como esta:</p>
+
+    <div class="codigo">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Meu site&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Olá Mundo&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </div>
+
+    <h2>🏷️ Tags importantes</h2>
+    <p>Algumas das principais tags que você vai usar:</p>
+
+    <ul>
+        <li><b>&lt;h1&gt;</b> → Título</li>
+        <li><b>&lt;p&gt;</b> → Parágrafo</li>
+        <li><b>&lt;a&gt;</b> → Link</li>
+        <li><b>&lt;img&gt;</b> → Imagem</li>
+    </ul>
+
+    <h2>💻 Exemplo prático</h2>
+    <p>Veja um exemplo simples:</p>
+
+    <div class="codigo">
+&lt;h1&gt;Meu primeiro site&lt;/h1&gt;
+&lt;p&gt;Estou aprendendo HTML!&lt;/p&gt;
+    </div>
+
+    <div class="exercicio">
+        <h3>🎯 Exercício</h3>
+        <p>
+            Crie um arquivo HTML com:
+        </p>
+        <ul>
+            <li>Um título com seu nome</li>
+            <li>Um parágrafo dizendo o que você está aprendendo</li>
+        </ul>
+    </div>
+
+</section>
+
+<div class="simulador">
+    <h2>🧪 Teste seu código</h2>
+
+    <textarea id="codigoInput" placeholder="Escreva seu HTML aqui...">
+<h1>Olá Mundo</h1>
+<p>Testando meu código!</p>
+    </textarea>
+
+    <br>
+    <button onclick="executarCodigo()">Executar</button>
+
+    <iframe id="resultado"></iframe>
+</div>
+
+<footer>
+    <p>© 2026 AgoCodeWay</p>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

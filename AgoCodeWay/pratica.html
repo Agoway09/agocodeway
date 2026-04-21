@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática - AgoCodeWay</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .aula {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .exercicio {
+            background: #ecf0f1;
+            padding: 20px;
+            border-left: 5px solid #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .simulador textarea {
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">DevStart</h1>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">JavaScript</a></li>
+            <li><a href="pratica.html">Prática</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="aula">
+
+    <h2>🎯 Pratique o que aprendeu</h2>
+
+    <!-- EXERCÍCIO 1 -->
+    <div class="exercicio">
+        <h3>🧱 HTML</h3>
+        <p>Crie:</p>
+        <ul>
+            <li>Um título com "Meu Site"</li>
+            <li>Um parágrafo com "Estou aprendendo!"</li>
+        </ul>
+    </div>
+
+    <!-- EXERCÍCIO 2 -->
+    <div class="exercicio">
+        <h3>🎨 CSS</h3>
+        <p>Estilize:</p>
+        <ul>
+            <li>Texto azul</li>
+            <li>Fundo cinza claro</li>
+        </ul>
+    </div>
+
+    <!-- EXERCÍCIO 3 -->
+    <div class="exercicio">
+        <h3>⚡ JavaScript</h3>
+        <p>Crie um botão que mostra um alerta ao clicar.</p>
+    </div>
+
+    <!-- SIMULADOR -->
+    <div class="simulador">
+        <h2>🧪 Teste aqui</h2>
+
+        <textarea id="codigoPratica">
+<h1>Meu Site</h1>
+<p>Estou aprendendo!</p>
+
+<button onclick="clicar()">Clique</button>
+
+<script>
+function clicar() {
+    alert("Funcionou!");
+}
+</script>
+        </textarea>
+
+        <br>
+        <button onclick="executarPratica()">Executar</button>
+
+        <iframe id="resultadoPratica"></iframe>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 AgoCodeWay</p>
+</footer>
+
+<script>
+function executarPratica() {
+    const codigo = document.getElementById("codigoPratica").value;
+    document.getElementById("resultadoPratica").srcdoc = codigo;
+}
+</script>
+
+</body>
+</html>
