@@ -1,5 +1,1 @@
-
-User-agent: *
-Allow: /
-
-https://Agoway09.github.io/agocodeway/sitemap.xml
+ /https://Agoway09.github.io/agocodeway/sitemap.xml
