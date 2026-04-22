@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-https://agoway09.github.io/agocodeway/sitemap.xml
+https://Agoway09.github.io/agocodeway/sitemap.xml
